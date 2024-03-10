@@ -16,10 +16,26 @@
 
     <title>Finstagram</title>
   </head>
-  <header>
-    <h1>Finstagram</h1>
-  </header>
+
   <body>
-    <%= yield %>
+
+
+  <% for i in (1..100) %>
+  
+    <% if i%3 == 0 && i%5 == 0 %>
+      <%="FIZZBUZZ" %>
+    <% elsif i%3 == 0 %>  
+      <%="FIZZ" %>
+    <% elsif i%3 == 0 %>
+      <%="BUZZ" %>  
+    <% else %>
+      <%= i %>
+    <% end %>
+      
+  <% end %>
+
+
+
+  
   </body>
 </html>
