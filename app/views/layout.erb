@@ -20,22 +20,9 @@
   <body>
 
 
-  <% for i in (1..100) %>
-  
-    <% if i%3 == 0 && i%5 == 0 %>
-      <%="FIZZBUZZ" %>
-    <% elsif i%3 == 0 %>  
-      <%="FIZZ" %>
-    <% elsif i%3 == 0 %>
-      <%="BUZZ" %>  
-    <% else %>
-      <%= i %>
-    <% end %>
       
-  <% end %>
+  <%= yield %>
 
 
-
-  
   </body>
 </html>
